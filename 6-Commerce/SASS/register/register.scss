@@ -1,0 +1,75 @@
+@mixin after($content, $top) {
+  content: $content;
+  position: absolute;
+  top: $top;
+  left: 0;
+}
+.register-account {
+  border: 1px solid black;
+  .small-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    .free,
+    .qty {
+      position: relative;
+    }
+    .free::after {
+      @include after("SUBTOTAL", -40px);
+    }
+    .qty::after {
+      @include after("QTY", -40px);
+    }
+  }
+
+  .header-h3 {
+    background-color: var(--green-color);
+    color: white;
+  }
+}
+select {
+  width: 80px;
+  padding: 5px;
+  border-radius: 8px;
+}
+.myform {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15px;
+  .promo-code-input input,
+  button {
+    outline: none;
+    border: none;
+  }
+  .promo-code-input button {
+    background-color: var(--green-color);
+    color: white;
+    border-radius: 12px;
+  }
+  .promo-code-input input {
+    border-bottom: 1px solid #888;
+    padding: 10px;
+  }
+  .promo-code-input span {
+    transition: 0.4s;
+    font-size: 18px;
+    color: #888;
+  }
+  .promo-code-input span:hover {
+    color: aqua;
+    cursor: pointer;
+  }
+}
+.myform .register {
+  input {
+    border: none;
+    margin: 20px 0;
+    width: 100%;
+    background-color: var(--yellow-color);
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 35px;
+  }
+}

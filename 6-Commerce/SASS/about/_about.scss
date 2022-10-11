@@ -1,0 +1,58 @@
+/*! Start About */
+.main-title {
+  color: var(--green-color);
+  font-size: 50px;
+  font-weight: 900;
+}
+/*! Start iFrame */
+.iframe h1 {
+  color: var(--green-color);
+}
+.iframe .row div {
+  height: 200px;
+}
+.iframe iframe {
+  width: 100%;
+}
+
+/*! Start Stage*/
+.stage .parent {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.stage .circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 8px solid var(--yellow-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+      color: black;
+      font-size: 55px;
+    }
+    p {
+      font-size: 20px;
+      font-weight: bold;
+      color: var(--green-color);
+    }
+  }
+}
+.stage .reasons h1 {
+  margin-top: 100px;
+}
+.stage .reasons h2 {
+  font-size: 26px;
+  margin-top: 40px;
+  font-weight: bold;
+}
+.stage .reasons p {
+  font-size: 20px;
+}

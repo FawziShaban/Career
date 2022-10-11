@@ -1,0 +1,100 @@
+.header {
+  height: 100vh;
+  width: 100%;
+}
+nav {
+  background-color: transparent;
+  position: relative;
+  z-index: 5;
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1250;
+}
+nav div {
+  color: white;
+  a {
+    color: white !important;
+    transition: 0.3s;
+    &:hover {
+      font-weight: bold;
+    }
+  }
+}
+nav svg {
+  color: white;
+}
+@media (max-width: 991px) {
+  nav .ul-links {
+    background-color: white;
+    a {
+      color: black !important;
+      padding: 10px;
+    }
+  }
+}
+nav div .black-color {
+  color: black !important;
+}
+nav svg {
+  color: black;
+}
+.header-video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.header-video video {
+  width: 100%;
+  height: 100%;
+}
+.header-video:before {
+  content: "";
+  position: absolute;
+  background-color: #00000060;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.header-text {
+  position: relative;
+  z-index: 3;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+}
+
+.header-text h1 {
+  font-size: 4rem !important;
+}
+@media (min-width: 992px) {
+  .header-text .fs-5 {
+    width: 50%;
+  }
+}
+.button p {
+  font-size: 10px;
+}
+@mixin buttons($color, $background) {
+  background-color: $background;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  a {
+    color: $color;
+  }
+}
+.button .first-button {
+  @include buttons(black, var(--yellow-color));
+}
+.button .second-button {
+  @include buttons(var(--yellow-color), transparent);
+  border: 1px solid var(--yellow-color);
+}

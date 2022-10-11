@@ -1,0 +1,239 @@
+/* ul{
+    display: flex;
+    justify-content: center;
+    background-color: #ccc;
+    
+}
+ul li{
+    width: 50px;
+    height: 50px;
+    list-style: none;
+    margin: 10px;
+    cursor: pointer;
+    opacity: 0.2;
+}
+ul #one{
+    background-color: red;
+}
+ul #two{
+    background-color: yellow;
+}
+ul #three{
+    background-color: green;
+}
+ul #four{
+    background-color: brown;
+}
+.big{
+    display: flex;
+    justify-content: center;
+}
+.big div{
+    width: 600px;
+    height: 300px;
+    background-color: red;
+}
+.active{
+    opacity: 1;
+    transition: 1s;
+} */
+
+                                        /* Task Challange */
+/* 
+form{
+    display: flex;
+    justify-content: center;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #ebebeb;
+    width: fit-content;
+}
+form input{
+    padding: 15px;
+    margin-left: 40px;
+    outline: none;
+    border: none;
+}
+form input:first-of-type{
+    width: 300px;
+    border-radius: 5px;
+}
+form input:last-of-type{
+    cursor: pointer;
+    background-color: red;
+    color:white;
+    border-radius: 5px;
+}
+.parent{
+    background-color: white;
+    width: 500px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    align-items: center;
+}
+.button{
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 5px;  
+}
+.button1{
+    color: black;
+    background-color: green;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 5px;  
+}
+.child{
+    margin: 10px;
+}
+.yellow{
+    color: yellow;
+}
+
+ */
+
+
+                                            /* Form Validation */
+ /* form{
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+    width: 500px;
+    margin: 20px auto;
+    position: relative;
+}
+form input{
+    width: 300px;
+    margin: 15px;
+    padding: 5px;
+    outline: none;
+}
+form input:last-of-type{
+    cursor: pointer;
+    color: red;
+    background: yellow;
+    border: none;
+}
+.parent1{
+    background-color: aqua;
+    width: fit-content;
+    position: absolute;
+    font-size: 10px;
+    top: 35px;
+    right: 26px;
+    color: red;
+}
+.parent2{
+    background-color: aqua;
+    width: fit-content;
+    position: absolute;
+    font-size: 10px;
+    top: 95px;
+    right: 26px;
+    color: red;
+}
+.parent3{
+    background-color: aqua;
+    width: fit-content;
+    position: absolute;
+    font-size: 10px;
+    top: 154px;
+    right: 40px;
+    color: red;
+} */
+/* body{
+    background-image: url(/landing.jpg);
+    background-size: cover;
+}
+div{
+    margin: 20px auto;
+    text-align: center;
+}
+.div{
+    margin: 20px auto;
+    text-align: center;
+}
+span{
+    opacity: 0;
+    min-width: 15px;
+    display: inline-block;
+}
+.anmin{
+    animation: opacity 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes opacity{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+        transform: scale(1.05);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+} */
+
+
+
+
+                                            /* Calclator */
+/* .card{
+    display: flex;
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    flex-wrap: wrap;
+    background-color: #ede2e2;
+    overflow: hidden;
+}
+.card div{
+    width: 100%;
+    height: 90px;
+    direction: rtl;
+    padding: 10px 20px;
+    font-size: 25px;
+}
+.card div p{
+    height: calc(60px / 3);
+    margin-bottom: 12px;
+}
+.card button,
+.card .answer{
+    width: calc(500px / 4);
+    padding: 20px;
+    background-color: #fb6c6c;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+}
+.card .answer{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-color: #ff0404 ;
+}
+span{
+    padding: 1px;
+}
+.click{
+    background-color: #ff4e4e !important ;
+} */
+
+                                            /* Calclator */

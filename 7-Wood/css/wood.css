@@ -1,0 +1,672 @@
+body{
+    direction: rtl;
+    box-sizing: border-box;
+}
+.container{
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+p{
+    margin: 0;
+}
+.mydata-parent{
+    background-color:#4C3C37 ;
+    direction: ltr;
+}
+.mydata-parent .mydata{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+    
+}
+.mydata-parent .mydata a,
+.mydata-parent .mydata p
+{
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+    transition: 0.5s;
+}
+.mydata-parent .mydata .child i{
+    color: white;
+    border: 1px solid #a17364;
+    padding: 11px;
+    transition: 0.5s;
+}
+
+.mydata-parent .mydata .child i:hover{
+    background-color: #5F9434;
+}
+.mydata-parent .mydata a:last-of-type:hover{
+    color: #5F9434;
+    text-decoration: underline;
+}
+.mydata-parent .mydata i {
+    color: #a17364;
+}
+@media (max-width: 991px) {
+    .mydata-parent{
+        display: none;
+    }
+}
+.mylinks-parent .mylinks{
+    display: grid;
+    grid-template-columns: auto 1fr ;
+    justify-content: space-between;
+    position: relative;
+}
+.mylinks-parent .mylinks .myclick,
+.mylinks-parent .mylinks .myclick2
+{
+    font-size: 22px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    display: none;
+}
+.mylinks-parent .mylinks ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    gap: 13px;
+}
+.mylinks-parent .mylinks .one li{
+    height: 100%;
+    margin-top: 25px;
+}
+
+.mylinks-parent .mylinks .logo{
+    flex-basis: 25%;
+}
+.mylinks-parent .mylinks img{
+    cursor: pointer;
+}
+.mylinks-parent .mylinks ul a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    transition: 0.2s;
+    
+}
+.mylinks-parent .mylinks ul a:hover{
+    color :#5F9434;
+}
+.mylinks-parent .mylinks ul button{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+@media (min-width:992px){
+    .mylinks-parent .pvc,
+.mylinks-parent .woods,
+.mylinks-parent .photo,
+.mylinks-parent .media{
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    z-index: 8;
+}
+.mylinks-parent .pvc a,
+.mylinks-parent .woods a,
+.mylinks-parent .photo a,
+.mylinks-parent .media a{
+    text-decoration: none;
+    color: black;
+    margin-bottom: 15px;
+    display: block;
+    width: calc(100% - 16px);
+    padding: 8px;
+}
+.mylinks-parent .pvc li,
+.mylinks-parent .woods li,
+.mylinks-parent .photo li,
+.mylinks-parent .media li{
+    
+    margin-top: 0px !important;
+}
+
+.mylinks-parent .pvc a:hover,
+.mylinks-parent .woods a:hover,
+.mylinks-parent .photo a:hover,
+.mylinks-parent .media a:hover{
+    background-color:#a17364
+}
+.first i,
+.two i,
+.three i,
+.four i{
+    display: none;
+}
+.first,
+.two,
+.three,
+.four{
+    position: relative;
+    cursor: pointer;
+}
+.first:hover .pvc,
+.two:hover  ol,
+.three:hover  ol,
+.four:hover  ol{
+    display: block;
+}
+.mylinks-parent .pvc{
+    top: 50px;
+    background-color: white;
+    box-shadow: 0px 0px 1px;
+    display: none;
+    width: 235px;
+}
+.mylinks-parent .woods{
+    top: 50px;
+    background-color: white;
+    box-shadow: 0px 0px 1px;
+    display: none;
+    width: 235px;
+}
+.mylinks-parent .photo{
+    top: 50px;;
+    background-color: white;
+    box-shadow: 0px 0px 1px;
+    display: none;
+    width: 235px;
+}
+.mylinks-parent .photo a:first-of-type{
+    padding-top: 5px;
+}
+.mylinks-parent .woods a:last-of-type,
+.mylinks-parent .pvc a:last-of-type,
+.mylinks-parent .photo a:last-of-type,
+.mylinks-parent .media a:last-of-type
+{
+    margin-bottom: 0;
+}
+.mylinks-parent .media{
+    top: 50px;
+    background-color: white;
+    box-shadow: 0px 0px 1px;
+    display: none;
+    width: 235px;
+}
+.woods .mywood ol{
+    display: none !important;
+    list-style: none;
+    position: absolute;
+    left: -220px;
+    width: 220px;
+    top: 0;
+    padding: 0;
+    box-shadow: 0px 0px 1px;
+    background-color: white;
+}
+.woods .mywood:hover ol{
+    display: block !important;
+}
+.woods .mytop ol{
+        display: none !important;
+        list-style: none;
+        position: absolute;
+        top: 36px;
+        left: -220px;
+        width: 220px;
+        padding: 0;
+        box-shadow: 0px 0px 1px;
+        background-color: white;
+    }
+    .woods .mytop:hover ol{
+        display: block !important;
+    }
+    .woods .mythird ol{
+        display: none !important;
+        list-style: none;
+        position: absolute;
+        left: -220px;
+        width: 220px;
+        top: 110px;
+        padding: 0;
+        box-shadow: 0px 0px 1px;
+        background-color: white;
+    }
+    .woods .mythird:hover ol{
+        display: block !important;
+    }
+    .woods .myfourd ol{
+        display: none !important;
+        list-style: none;
+        position: absolute;
+        left: -220px;
+        width: 220px;
+        top: 147px;
+        padding: 0;
+        box-shadow: 0px 0px 1px;
+        background-color: white;
+    }
+    .woods .myfourd:hover ol{
+        display: block !important;
+    }
+    .photo .myphoto ol{
+        display: none !important;
+        list-style: none;
+        position: absolute;
+        left: -220px;
+        width: 220px;
+        top: 0;
+        padding: 0;
+        box-shadow: 0px 0px 1px;
+        background-color: white;
+    }
+    .photo .myphoto:hover ol{
+        display: block !important;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .mylinks-parent .mylinks{
+        position: relative;
+    }
+    .mylinks-parent .mylinks ul a li{
+        margin-bottom: 15px;
+    }
+    .mylinks-parent .mylinks ul a:first-of-type {
+        margin-top: 40px;
+    }
+    .mylinks-parent .mylinks .myclick{
+        display: block;
+        cursor: pointer;
+    }
+    .mylinks-parent .mylinks .myclick2{
+        cursor: pointer;
+    }
+    .mydata-parent {
+        display: block;
+        position: relative;
+        background: white;
+    }
+    .mydata-parent .mydata{
+        flex-direction: column-reverse;
+        height: 130px;
+        width: 270px;
+        background-color: #4C3C37;
+        padding: 15px;
+        position:absolute;
+        right: -308px;
+        top: 0;
+        align-items: flex-end;
+        z-index: 5;
+        transition: 0.5s;
+    }
+    .mylinks-parent .mylinks ul{
+        flex-direction: column;
+        height: fit-content;
+        width: 270px;
+        padding: 15px;
+        position:absolute;
+        right: -325px;
+        top: 144px;
+        align-items: flex-start;
+        z-index: 5;
+        transition: 0.5s;
+        background-color: white;
+    }
+    .first ,
+    .two ,
+    .three ,
+    .four {
+        position: relative;
+        width: 90%;
+    }
+    .pvc,
+    .woods,
+    .photo,
+    .media{
+        display: none;
+        list-style: none;
+    }
+    .photo a{
+        margin-top: 5px !important;
+    }
+    .first i,
+    .two i,
+    .three i,
+    .four i{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .display{
+        display: block;
+    }
+    li ol{
+        list-style: none;
+        display: none;
+    }
+    .mywood,
+    .mytop,
+    .mythird,
+    .myfourd,
+    .myphoto{
+        position: relative;
+    }
+    .fa-chevron-down{
+        cursor: pointer;
+    }
+}
+/* Start My Video  */
+
+.myvideo-parent .myvideo video{
+    width: 100% ;
+}
+.myvideo-parent .myvideo{
+    position: relative;
+}
+.myvideo-parent .myvideo .video-child,
+.myvideo-parent .myvideo .video-child1,
+.myvideo-parent .myvideo .video-child2,
+.myvideo-parent .myvideo .video-child3,
+.myvideo-parent .myvideo .video-child4{
+    position: absolute;
+    bottom:10%;
+    margin-left: 30px;
+}
+.myvideo-parent .myvideo .image{
+    width: 140px;
+    transition: 0.5s;
+}
+.myvideo-parent .myvideo .image:hover
+{
+    transform: translateY(-7%);
+}
+.myvideo-parent .myvideo img{
+    width: 100%;
+    position: relative;
+    border: 5px solid wheat;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.myvideo-parent .myvideo h2{
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    background-color: white;
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+.myvideo-parent .myvideo .video-child{
+    left: 13%;
+}
+.myvideo-parent .myvideo .video-child1{
+    left: 29%;
+}
+.myvideo-parent .myvideo .video-child2{
+    left: 45%;
+}
+.myvideo-parent .myvideo .video-child3{
+    left: 61%;
+}
+.myvideo-parent .myvideo .video-child4{
+    left: 77%;
+}
+
+.mydetials-parent{
+    background-color: #fff8ea;
+}
+.mydetials{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+
+    gap: 50px;
+}
+.mydetials .mylogo{
+    max-width: 450px;
+}
+.mydetials .mylogo img{
+    width: 100%
+}
+.mydetials .content h1{
+    color: #4C3C37;
+}
+.mydetials .content {
+    color: #503b34;
+    font-size: 18px;
+}
+.mydetials .content  button{
+    background-color: #5F9434;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+@media(max-width:992px){
+    .myvideo-parent .myvideo div{
+        display: none;
+    }
+}
+@media(max-width:768px){
+    .mydetials{
+        flex-direction: column;
+    }
+}
+/* Start Cairo 2019 */
+.team-work-parent{
+    background-image: url(../img/landing.jpg);
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+.team-work-parent .team-work{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #503b34;
+    color: white;
+    padding: 25px 0;
+    height: 60px;
+    align-items: center;
+}
+.team-work-parent .team-work button{
+    padding: 15px 30px;
+    cursor: pointer;
+    background-color: #5F9434;
+    color: white;
+    border: none;
+    font-size: 22px;
+    border-radius:12px;
+}
+iframe{
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+    z-index: 5;
+}
+.iframe{
+    display: block !important;
+}
+.team-work-parent .fa-play{
+    position: absolute;
+    left:320px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    padding: 15px;
+    color: white;
+    border: 4px solid white;
+    cursor: pointer;
+    z-index: 1;
+}
+.team-work-parent .fa-times-circle{
+    position: absolute;
+    top: 30px;
+    transform: translateY(-50%);
+    font-size: 22px;
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+    z-index: 1;
+    display: none;
+}
+.team-work-parent h2{
+    position: absolute;
+    left: 200px;
+    top: 22%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    padding: 15px;
+    color: white;
+    z-index: 2;
+    width: 276px;
+    font-size: 47px;
+    text-align: center;
+}
+@media(max-width:991px){
+    .team-work-parent .team-work{
+        flex-direction: column;
+        height: 130px;
+    }
+    .team-work-parent .team-work h1{
+        padding: 15px;
+    }
+    .team-work-parent .team-work button{
+        margin-bottom: 25px;
+    }
+    .team-work-parent .fa-play{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .team-work-parent .fa-times-circle{
+        z-index: 10;
+    }
+    .team-work-parent h2{
+        left: 50%;
+        transform: translateX(-50%);
+        top: 15%;
+    }
+    iframe{
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 8;
+    }
+}
+/* Swiper */
+.swiper {
+    width: 90%;
+    height: 70%;
+}
+.swiper4{
+    position: absolute;
+    left: 0;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.swiper-slide img {
+    display: block;
+    width:250px;
+    height: 150px;
+    object-fit: cover;
+}
+.swiper-slide .image{
+    position: relative;
+}
+.swiper-slide .image p{
+    position: absolute;
+    bottom: 20px;
+    background-color: #1c1c1c7d;
+    width: 96%;
+    padding: 5px;
+    color: white;
+}
+ /* Start Location */
+
+.location-parent .location{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+}
+.location-parent .location .one img{
+    width: 270px;
+}
+.location-parent .location .one{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+}
+.location-parent .location .one:first-of-type{
+    justify-content: center ;
+}
+.location-parent .location .one .child{
+    display: flex;
+    margin-bottom: 20px;
+}
+.location-parent .location .one h1{
+    color: #5F9434;
+}
+.location-parent .location .one .child p,
+.location-parent .location .one .child i{
+    color: #6e4a27;
+}
+.location-parent .location .one .child i{
+    margin-left: 15px; 
+}
+.location-parent .location .one .child p a{
+    color:#b38339 ;
+    text-decoration: none;    
+}
+.fa-phone-volume{
+    font-size: 40px;
+}
+.location-parent .location .one .child div p {
+    margin-bottom: 10px;
+}
+.location-parent .location .one .child1 {
+    margin-top: 15px;
+}
+.location-parent .location .one .child1 a{
+    color: #5F9434;
+    background-color: wheat;
+    padding: 15px;
+}
+@media(max-width:768px){
+    .location-parent .location{
+        grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    }
+    .location-parent .location .one{
+        justify-content: center;
+        align-items: center;
+    }
+}
+/* Start Footer */
+.footer-parent{
+    background-color: #4C3E33;
+    padding: 40px;
+}
+.footer-parent .footer{
+    text-align: center;
+    color: white;
+}

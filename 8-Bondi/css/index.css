@@ -1,0 +1,178 @@
+:root{
+    --dark-color:#19283f;
+    --green-color:#33d1cc;
+    --red-color:#ff3150;
+    --yellow-color:#ffc400;
+}
+.navbar{
+    background-color: var(--dark-color);
+}
+.navbar .navbar-brand{
+    color:white;
+}
+.navbar .nav-item .nav-link{
+    color: white;
+}
+.navbar .nav-item .active,
+.navbar .nav-item .nav-link:focus,
+.navbar .nav-item .nav-link:hover{
+    color: var(--green-color);
+}
+.navbar svg{
+    color: white;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar .search svg{
+    color: var(--green-color);
+    border-left: 1px solid var(--green-color);
+}
+
+/* Start Landing */
+.landing{
+    height: calc(100vh - 56px);
+    background-color: var(--dark-color);
+}
+.main-btn{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+    border: none;
+}
+.main-btn:hover{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+/* End Landing */
+/* Start Section */
+.main-title:after{
+    position: absolute;
+    content: "";
+    bottom: -20px;
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    left: 50%;
+    transform: translateX(-50%);
+}
+.icons{
+    height: 200px;
+}
+.icons svg{
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+.icons .number{
+    font-size: 12rem;
+    color: #7fffd426;
+}
+.icons .icon{
+    color: var(--green-color);
+    font-size: 4rem;
+}
+.feat h4{
+    color: var(--yellow-color);
+}
+/* End Section */
+/* Start Make This  */
+.make-this{
+    background-color: #7fffd426;
+}
+.make-this ul .active{
+    background-color: var(--red-color);
+    color: var(--yellow-color)
+}
+.make-this ul li{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+.make-this ul li:not(.active):hover{
+    color: var(--red-color);
+}
+
+/* Start Stuff */
+.my-p p{
+    width: 60%;
+}
+.stuff-parent .stuff{
+    margin-top: 100px;
+}
+/* Start Team */
+.team{
+    background-color: #7fffd426;
+}
+.team h2{
+    color: var(--yellow-color);
+}
+.team .row .box{
+    margin:15px;
+}
+.team .box h3{
+    background-color: var(--green-color);
+}
+/* End Team */
+/* Start Project */
+.project{
+    background-color:var(--dark-color)
+}
+/* End Project */
+/* Start Subscribe */
+.subscribe{
+    background-color: var(--yellow-color);
+}
+.subscribe form .input-text{
+    background-color: transparent;
+    border-bottom: 1px solid white !important;
+    outline: none;
+    color: white;
+}
+::placeholder{
+    color: white;
+}
+.subscribe form .input-submit{
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+}
+@media(max-width:575px){
+    .subscribe form .input-text{
+        margin: 20px 0;
+    }
+}
+/* End Subscribe */
+/* Start Footer  */
+.footer{
+    background-color: var(--dark-color);
+}
+.footer .logo{
+    width: 100px;
+}
+.footer span{
+    color: var(--green-color);
+}
+.footer .title{
+    color:var(--yellow-color)
+}
+.footer .row div{
+    margin-bottom: 25px;
+}
+.footer .myicons svg{
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+.footer .myicons .fa-facebook-f{
+    background-color: blue;
+}
+.footer .myicons .fa-twitter{
+    background-color: var(--green-color)
+}
+.footer .myicons .fa-google-plus-g{
+    background-color: var(--red-color);
+}
+.footer .myicons .fa-instagram{
+    background-color: pink;
+}
+/* End Footer */

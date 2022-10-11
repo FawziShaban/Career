@@ -1,0 +1,35 @@
+/*! Start Contact*/
+.contact .button {
+  background-color: var(--yellow-color);
+  cursor: pointer;
+  width: fit-content;
+  padding: 20px 30px;
+  margin: 10px auto;
+  svg {
+    transition: 0.4s;
+  }
+  &:hover svg {
+    margin-left: 10px;
+  }
+  a {
+    color: var(--green-color);
+  }
+}
+
+/*! Start Footer*/
+.footer {
+  background-color: #f7f7f7;
+  border-top: 2px solid var(--yellow-color);
+  .footer-content {
+    justify-content: space-between;
+    align-items: center;
+    ul li a {
+      color: black;
+      transition: 0.3s;
+      font-size: 18px;
+      &:hover {
+        color: var(--green-color);
+      }
+    }
+  }
+}

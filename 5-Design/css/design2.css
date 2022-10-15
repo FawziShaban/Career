@@ -429,9 +429,6 @@ html {
   height: 103%;
   padding-top: 86px;
 }
-.swiper-parent .padding {
-  padding-top: 386px;
-}
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -449,7 +446,7 @@ html {
 /* Start Cards */
 .cards-parent .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(315px, 1fr));
   gap: 8px;
 }
 .cards-parent .cards .card {

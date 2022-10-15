@@ -91,6 +91,7 @@ html {
   top: 0;
   z-index: 2;
 }
+
 .header-parent .fixed {
   position: fixed;
   top: 0;
@@ -393,9 +394,6 @@ html {
   top: -87px;
   padding-top: 86px;
 }
-.swiper-parent .padding {
-  padding-top: 386px;
-}
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -420,7 +418,7 @@ html {
 /* Start Cards */
 .cards-parent .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(315px, 1fr));
   gap: 15px;
 }
 .cards-parent .cards .card {
